@@ -27,7 +27,7 @@ export const Layout: ReactComponent<Props> = ({
         <meta property='og:type' content='website' />
       </Head>
       <Container maxW='container.md' py={10}>
-        <header>
+        <header className='mb-10'>
           <Heading>Wallet</Heading>
         </header>
         {children}
