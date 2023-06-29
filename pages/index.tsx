@@ -1,4 +1,5 @@
 import { AddWallet } from '@/components/addWallet';
+import { DeleteWallet } from '@/components/deleteWallet';
 import { EditWallet } from '@/components/editWallet';
 import { Layout } from '@/components/layout';
 import { useWalletStore } from '@/lib/store/wallet.store';
@@ -44,6 +45,7 @@ export default function Home() {
                 </p>
                 <Flex mt={2} alignItems='center'>
                   <EditWallet wallet={wallet} />
+                  <DeleteWallet id={wallet.id} />
                 </Flex>
               </div>
             ))}
