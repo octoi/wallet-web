@@ -14,7 +14,10 @@ export const createTransaction = (data: {
           .update({
             where: { id: data.walletId },
             data: {
-              balance: transactionData.wallet.balance + transactionData.amount,
+              balance:
+                data.type == 'ADD'
+                  ? transactionData.wallet.balance + transactionData.amount
+                  : transactionData.wallet.balance - transactionData.amount,
             },
           })
           .then(() => resolve(transactionData))
