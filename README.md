@@ -1,6 +1,8 @@
 # WALLET
 > An app to store & manage money transactions
 
+🚫 Abandoned
+
 ```bash
 $ pnpm install
 ```
@@ -10,6 +12,4 @@ $ pnpm dev
 ```bash
 $ pnpm build
 ```
-
-Abandoned
 
